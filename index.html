@@ -11,8 +11,12 @@
 <body>
   <!-- ヘッダーセクション -->
   <header id="header" class="header">
-    <div class="header-image">
-      <img src="images/header/woshite-n.png" alt="Woshite-n. ヲシテ文字アート">
+    <div class="header-video">
+      <video autoplay muted loop playsinline poster="images/header/woshite-n.png">
+        <source src="images/header/woshite-n.mp4" type="video/mp4">
+        <!-- 動画非対応ブラウザ用のフォールバック -->
+        <img src="images/header/woshite-n.png" alt="Woshite-n. ヲシテ文字アート">
+      </video>
     </div>
   </header>
 
@@ -172,7 +176,7 @@
       </p>
       <form id="contact-form" class="contact-form reveal" action="https://api.web3forms.com/submit" method="POST">
         <!-- Web3Forms アクセスキー（要設定） -->
-        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="access_key" value="103a5950-24d7-4613-acad-ff48b5bc0a7d">
         <!-- ハニーポット（スパム対策） -->
         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
