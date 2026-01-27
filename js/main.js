@@ -125,15 +125,17 @@ function initContactForm() {
       });
 
       if (response.ok) {
-        status.textContent = 'お問い合わせを送信しました。ありがとうございます。';
+        status.textContent = 'お問い合わせを送信しました。ありがとうございます。 / Thank you for your message.';
         status.className = 'form-status success';
+        status.style.display = '';
         form.reset();
       } else {
         throw new Error('送信に失敗しました');
       }
     } catch (error) {
-      status.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+      status.textContent = '送信に失敗しました。時間をおいて再度お試しください。 / Failed to send. Please try again later.';
       status.className = 'form-status error';
+      status.style.display = '';
     } finally {
       submitButton.disabled = false;
       submitButton.textContent = originalText;
