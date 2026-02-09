@@ -678,7 +678,7 @@ body {
   }
 
   .carousel-track-container {
-    width: 100%;
+    flex: 0 0 100%;
     order: -1;
     margin-bottom: 5px;
   }
