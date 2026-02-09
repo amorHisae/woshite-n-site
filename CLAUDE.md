@@ -78,7 +78,9 @@
   │   └── main.js         # JavaScript
   ├── images/
   │   ├── header/         # ヘッダー画像
-  │   ├── gallery/        # ギャラリー画像（6枚以上）
+  │   ├── gallery/        # ギャラリー1面目画像
+  │   │   ├── back/       # ギャラリー2面目画像（タイトル+説明）
+  │   │   └── woshite/    # ギャラリー3面目画像（ヲシテ文字）
   │   └── profile/        # プロフィール画像
   └── data/
       └── gallery.json    # ギャラリーデータ
@@ -87,19 +89,27 @@
 ### ギャラリー画像管理
 ```yaml
 追加方法:
-  1. images/gallery/ に画像を配置
-  2. data/gallery.json に情報を追記
+  1. images/gallery/ に1面目画像を配置
+  2. images/gallery/back/ に2面目画像を配置（タイトル＋説明の画像）
+  3. images/gallery/woshite/ に3面目画像を配置（ヲシテ文字タイトル画像）
+  4. data/gallery.json に情報を追記
 
 JSONフォーマット:
   {
     "items": [
       {
         "imagePath": "images/gallery/arigatou.jpg",
+        "backImagePath": "images/gallery/back/arigatou.jpg",
+        "woshiteImagePath": "images/gallery/woshite/arigatou.jpg",
         "title": "ありがとう",
         "description": "感謝の気持ちを込めたキャラクター"
       }
     ]
   }
+
+注意:
+  - backImagePath, woshiteImagePath は省略可（テキスト表示にフォールバック）
+  - 3面フリップ: 1面=キャラ画像 → 2面=タイトル+説明 → 3面=ヲシテ文字
 ```
 
 ### セクション構成

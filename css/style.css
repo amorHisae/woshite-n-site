@@ -162,10 +162,6 @@ body {
   transform-style: preserve-3d;
 }
 
-.gallery-card.flipped .card-inner {
-  transform: rotateY(180deg);
-}
-
 .card-front,
 .card-back {
   position: absolute;
@@ -175,13 +171,11 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-front {
   background-color: var(--color-white);
 }
 
-.card-front img {
+.card-front img,
+.card-back img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -189,18 +183,25 @@ body {
 }
 
 /* ホバーエフェクト */
-.gallery-card:hover .card-front img {
+.gallery-card:hover img {
   transform: scale(1.05);
 }
 
-.gallery-card:hover .card-front {
+.gallery-card:hover .card-front,
+.gallery-card:hover .card-back {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card-back {
+  transform: rotateY(180deg);
+}
+
+/* テキストフォールバック（画像未設定時） */
+.card-face-text {
+  width: 100%;
+  height: 100%;
   background-color: var(--color-primary);
   color: var(--color-white);
-  transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,7 +210,7 @@ body {
   text-align: center;
 }
 
-.card-back h3 {
+.card-face-text h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: 500;
@@ -219,7 +220,7 @@ body {
   overflow: hidden;
 }
 
-.card-back p {
+.card-face-text p {
   font-size: 0.9rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
@@ -670,7 +671,18 @@ body {
     font-size: 1.1rem !important;
   }
 
-  /* お知らせカルーセル タブレット */
+  /* お知らせカルーセル タブレット - ボタンを下に移動 */
+  .news-carousel {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .carousel-track-container {
+    width: 100%;
+    order: -1;
+    margin-bottom: 5px;
+  }
+
   .news-card-inner {
     flex-direction: column;
     min-height: auto;
@@ -693,7 +705,7 @@ body {
   }
 
   .profile-description {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -716,11 +728,11 @@ body {
     gap: 10px;
   }
 
-  .card-back h3 {
+  .card-face-text h3 {
     font-size: 1.2rem;
   }
 
-  .card-back p {
+  .card-face-text p {
     font-size: 0.8rem;
   }
 

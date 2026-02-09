@@ -2,101 +2,141 @@
   "items": [
     {
       "imagePath": "images/gallery/woshite-1.png",
+      "backImagePath": "images/gallery/back/woshite-1.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-1.jpeg",
       "title": "お名前シリーズ(なかた えみこ)",
       "description": "あなたのお名前をヲシテ文字のキャラクターにします！どんな子たちが来るのか？楽しみですね！お名前オーダーお持ちしてます！"
     },
     {
       "imagePath": "images/gallery/woshite-2.png",
+      "backImagePath": "images/gallery/back/woshite-2.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-2.jpeg",
       "title": "桃の節句",
       "description": "3月3日はひな祭り、女の子の節句です。3色のひし餅のような色合いで女の子の華憐でかわいらしい作品となっています。"
     },
     {
       "imagePath": "images/gallery/woshite-3.png",
+      "backImagePath": "images/gallery/back/woshite-3.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-3.jpeg",
       "title": "節分(マメ)",
       "description": "立春の前日は豆まきなどの厄払いを行います。豆まき、柊、鰯など厄除けに使われる色合いをプラスした作品です。"
     },
     {
       "imagePath": "images/gallery/woshite-4.png",
+      "backImagePath": "images/gallery/back/woshite-4.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-4.jpeg",
       "title": "お正月",
       "description": "お正月は年神様をお迎えする行事。そのお供えのおせち料理の色合いを用いることで、お正月の華やかさをプラスした作品です。"
     },
     {
       "imagePath": "images/gallery/woshite-5.png",
+      "backImagePath": "images/gallery/back/woshite-5.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-5.jpeg",
       "title": "夏至",
       "description": "1年で最も日が長くなる日。花菖蒲の多くの品種の色を用いて、上品で優美な色合いになっています。"
     },
     {
       "imagePath": "images/gallery/woshite-6.png",
+      "backImagePath": "images/gallery/back/woshite-6.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-6.jpeg",
       "title": "端午の節句",
       "description": "男の子の成長を祝い、健康を祈る行事。日本の伝統色で、力強い、元気な青色の紺碧や柏餅の色を使って描きました。"
     },
     {
       "imagePath": "images/gallery/woshite-7.png",
+      "backImagePath": "images/gallery/back/woshite-7.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-7.jpeg",
       "title": "お花見(さくら)",
       "description": "お花見と言えば「桜」ですが、日本の春を代表する桜並木と菜の花畑をイメージした作品です。"
     },
     {
       "imagePath": "images/gallery/woshite-8.png",
+      "backImagePath": "images/gallery/back/woshite-8.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-8.jpeg",
       "title": "重陽の節句",
       "description": "9月9日は重陽の節句。邪気を払い健康を願う行事です。菊の花が美しい頃で、色とりどりの菊の花を見るような作品です。"
     },
     {
       "imagePath": "images/gallery/woshite-9.png",
+      "backImagePath": "images/gallery/back/woshite-9.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-9.jpeg",
       "title": "お盆",
       "description": "年に一度、ご先祖様があの世から戻ってくると考えられている。先祖の魂を送り迎えする乗り物の精霊馬と精霊牛やほおずきの色を用いています。"
     },
     {
       "imagePath": "images/gallery/woshite-10.png",
+      "backImagePath": "images/gallery/back/woshite-10.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-10.jpeg",
       "title": "七夕(天の川)",
       "description": "笹に飾る五色の短冊と天の川を臨む深く暗い青い夜空をイメージしました。"
     },
     {
       "imagePath": "images/gallery/woshite-11.png",
+      "backImagePath": "images/gallery/back/woshite-11.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-11.jpeg",
       "title": "冬至",
       "description": "一年で最も昼が短い日。柚子湯には厄払いや禊の意味があり、柚子や檜風呂のカラーを。また、幼児には「ん」の付く食べ物で縁起を担ぐことから、南瓜カラーも。"
     },
     {
       "imagePath": "images/gallery/woshite-12.png",
+      "backImagePath": "images/gallery/back/woshite-12.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-12.jpeg",
       "title": "立冬(えびす)",
       "description": "暦の上では、冬の始まりをさし、えびす神に五穀豊穣､大漁、商売繁盛を祈願する。銀杏や山茶花、椿のカラーで描く。"
     },
     {
       "imagePath": "images/gallery/woshite-13.png",
+      "backImagePath": "images/gallery/back/woshite-13.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-13.jpeg",
       "title": "お月見(うさぎ)",
       "description": "中秋の名月。ススキ、月見団子、栗、芋、豆などをお供えして、秋の収穫を神々に感謝する。その色を表しています。"
     },
     {
       "imagePath": "images/gallery/woshite-14.png",
+      "backImagePath": "images/gallery/back/woshite-14.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-14.jpeg",
       "title": "丙午(ひのえうま)",
       "description": "2026年は60年に一度の丙午(ひのえうま)の年。行動力がありエネルギッシュな年です。そこに、かわいさをプラスした作品です。"
     },
     {
       "imagePath": "images/gallery/woshite-15.png",
+      "backImagePath": "images/gallery/back/woshite-15.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-15.jpeg",
       "title": "ネコ － フトマニ図",
       "description": "「フトマニ図」は「神の座席図」と言われ、この円形の図自体にパワーがあり、さらに字自体にパワーがあるとされる「ヲシテ文字」の帽子をかぶっているネコたちを座席に座らせたかわいい作品です。"
     },
     {
       "imagePath": "images/gallery/woshite-16.png",
+      "backImagePath": "images/gallery/back/woshite-16.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-16.jpeg",
       "title": "女の子 ー いろは唄",
       "description": "「いろは唄」とは手習いの手本として使われていた、ひらがなの47文字を一度ずつ使って作られた七五調の歌で、人生の無常や仏教の教えを表しているとも言われる。これを「ヲシテ文字」をネックレスに忍ばせた女の子たちでかわいく表現した作品です。"
     },
     {
       "imagePath": "images/gallery/woshite-17.png",
+      "backImagePath": "images/gallery/back/woshite-17.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-17.jpeg",
       "title": "いいね、うれしいね",
       "description": "くるんヲシテちゃんシリーズ　くるんとしたヲシテちゃん達が、話しかけてくれます。塗り絵にもなるよ。お名前オーダーもお持ちしてます！"
     },
     {
       "imagePath": "images/gallery/woshite-18.png",
+      "backImagePath": "images/gallery/back/woshite-18.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-18.jpeg",
       "title": "万博大阪 2025",
       "description": "「ヲシテ文字」で万博大阪2025の参加国の言葉の「ありがとう」を描き、全てに感謝する想いをかわいく表現しました。"
     },
     {
       "imagePath": "images/gallery/woshite-19.png",
+      "backImagePath": "images/gallery/back/woshite-19.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-19.jpeg",
       "title": "かわいいは世界を救う",
       "description": "かわいいものを見ると、なぜか笑顔になる。笑顔で世界を救う！ヲシテんの軸になるテーマの作品です。"
     },
     {
       "imagePath": "images/gallery/woshite-20.png",
+      "backImagePath": "images/gallery/back/woshite-20.jpeg",
+      "woshiteImagePath": "images/gallery/woshite/woshite-20.jpeg",
       "title": "愛と調和",
       "description": "「ヲシテ文字」で「愛と調和」と描いてあり、日本の素晴らしい文字である「ヲシテ文字」と「ひらがな」のコラボをかわいく表現しています。"
     }

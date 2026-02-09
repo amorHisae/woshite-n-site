@@ -57,28 +57,58 @@ function shuffleArray(array) {
 }
 
 /**
- * ギャラリーカードを生成
+ * ギャラリーカードを生成（3面フリップ）
+ * 1面: キャラクター画像
+ * 2面: タイトル＋説明（画像 or テキストフォールバック）
+ * 3面: ヲシテ文字タイトル（画像 or テキストフォールバック）
  */
 function createGalleryCard(item, index) {
   const card = document.createElement('div');
   card.className = 'gallery-card reveal';
   card.style.setProperty('--card-index', index);
 
+  const face1 = `<img src="${escapeHtml(item.imagePath)}" alt="${escapeHtml(item.title)}">`;
+
+  const face2 = item.backImagePath
+    ? `<img src="${escapeHtml(item.backImagePath)}" alt="${escapeHtml(item.title)} - 説明">`
+    : `<div class="card-face-text"><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p></div>`;
+
+  const face3 = item.woshiteImagePath
+    ? `<img src="${escapeHtml(item.woshiteImagePath)}" alt="${escapeHtml(item.title)} - ヲシテ文字">`
+    : `<div class="card-face-text"><h3>${escapeHtml(item.title)}</h3></div>`;
+
+  const faces = [face1, face2, face3];
+
   card.innerHTML = `
     <div class="card-inner">
-      <div class="card-front">
-        <img src="${escapeHtml(item.imagePath)}" alt="${escapeHtml(item.title)}">
-      </div>
-      <div class="card-back">
-        <h3>${escapeHtml(item.title)}</h3>
-        <p>${escapeHtml(item.description)}</p>
-      </div>
+      <div class="card-front">${faces[0]}</div>
+      <div class="card-back">${faces[1]}</div>
     </div>
   `;
 
-  // クリックで裏返し
+  let flipCount = 0;
+  let isAnimating = false;
+  const cardInner = card.querySelector('.card-inner');
+  const frontEl = card.querySelector('.card-front');
+  const backEl = card.querySelector('.card-back');
+
   card.addEventListener('click', () => {
-    card.classList.toggle('flipped');
+    if (isAnimating) return;
+    isAnimating = true;
+    flipCount++;
+    cardInner.style.transform = `rotateY(${flipCount * 180}deg)`;
+  });
+
+  cardInner.addEventListener('transitionend', (e) => {
+    if (e.propertyName !== 'transform') return;
+    isAnimating = false;
+    const currentFaceIndex = flipCount % 3;
+    const nextFaceIndex = (currentFaceIndex + 1) % 3;
+    if (flipCount % 2 === 1) {
+      frontEl.innerHTML = faces[nextFaceIndex];
+    } else {
+      backEl.innerHTML = faces[nextFaceIndex];
+    }
   });
 
   return card;
