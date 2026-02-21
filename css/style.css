@@ -690,8 +690,9 @@ body {
 
   .news-image {
     width: 100%;
-    min-height: 200px;
-    max-height: 200px;
+    aspect-ratio: 1 / 1;
+    min-height: unset;
+    max-height: unset;
   }
 
   .news-content {
@@ -756,8 +757,9 @@ body {
   }
 
   .news-image {
-    min-height: 160px;
-    max-height: 160px;
+    aspect-ratio: 1 / 1;
+    min-height: unset;
+    max-height: unset;
   }
 
   .news-content {
